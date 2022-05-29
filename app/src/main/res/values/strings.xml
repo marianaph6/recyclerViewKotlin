@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">recyclerViewKotlin</string>
+    <string name="linear_vertical">Linear Vertical</string>
+    <string name="linear_horizontal">Linear Horizontal</string>
+    <string name="linear_grid">Linear Grid</string>
+    <string name="linear_staggered">Linear Staggered</string>
 </resources>
