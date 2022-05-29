@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maria/Documents/Personal/Cursos/BootCamp-AndroidStudio/Repositorios/recyclerViewKotlin/app/src/main/res/layout/activity_linear_horizontal.xml" value="0.1" />
+        <entry key="..\:/Users/maria/Documents/Personal/Cursos/BootCamp-AndroidStudio/Repositorios/recyclerViewKotlin/app/src/main/res/layout/activity_linear_vertical.xml" value="0.1" />
         <entry key="..\:/Users/maria/Documents/Personal/Cursos/BootCamp-AndroidStudio/Repositorios/recyclerViewKotlin/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/maria/Documents/Personal/Cursos/BootCamp-AndroidStudio/Repositorios/recyclerViewKotlin/app/src/main/res/layout/activity_staggered_grid.xml" value="0.1" />
       </map>
     </option>
   </component>
