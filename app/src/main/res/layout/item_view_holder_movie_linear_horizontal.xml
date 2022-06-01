@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_linearHorizontal_principal"
+        android:layout_width="@dimen/movie_item_image"
+        android:layout_height="@dimen/movie_item_image"
+        android:layout_marginStart="@dimen/movie_small_space"
+        android:layout_marginTop="@dimen/movie_small_space"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/movie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_linearHorizontal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movie_small_space"
+        android:layout_marginTop="@dimen/movie_small_space"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageView_linearHorizontal_principal"
+        app:layout_constraintTop_toBottomOf="@id/imageView_linearHorizontal_principal"
+        tools:text="Sully" />
+
+    <TextView
+        android:id="@+id/textView_linearHorizontal_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movie_small_space"
+        android:layout_marginTop="@dimen/very_small_space"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/textView_linearHorizontal_title"
+        app:layout_constraintTop_toBottomOf="@id/textView_linearHorizontal_title"
+        tools:text="2020" />
+
+
+    <TextView
+        android:id="@+id/textView_linearHorizontal_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_small_space"
+        android:layout_marginStart="@dimen/movie_small_space"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/textView_linearHorizontal_title"
+        app:layout_constraintTop_toBottomOf="@id/textView_linearHorizontal_year"
+        tools:text="HD" />
+
+
+
+</LinearLayout>
