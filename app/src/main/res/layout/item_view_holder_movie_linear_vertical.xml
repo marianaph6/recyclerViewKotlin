@@ -58,13 +58,5 @@
         app:layout_constraintTop_toBottomOf="@id/textView_linearVertical_year"
         tools:text="HD" />
 
-    <TextView
-        android:id="@+id/textView_linearVertical_actors"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/very_small_space"
-        app:layout_constraintStart_toStartOf="@id/textView_linearVertical_title"
-        app:layout_constraintTop_toBottomOf="@id/textView_linearVertical_type"
-        tools:text="Actor 1, Actor2, Actor 3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
