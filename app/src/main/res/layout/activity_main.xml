@@ -1,157 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="20dp"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/rl_LinearVertical"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewVertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:clickable="true"
-        tools:ignore="MissingConstraints"
-        android:focusable="true">
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutVertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/vertical"/>
+
+
+            <TextView
+                android:id="@+id/textViewVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:text="@string/linear_vertical"
+                android:layout_below="@+id/imageViewVertical" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/horizontal" />
+
+
+            <TextView
+                android:id="@+id/textViewHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:text="@string/linear_horizontal"
+                android:layout_below="@+id/imageViewHorizontal" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardViewGrid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <ImageView
-            android:id="@+id/imgView_LinearVertical"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_margin="10dp"
-            android:src="@drawable/vertical" />
-
-        <TextView
+            android:id="@+id/imageViewGrid"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="10dp"
-            android:layout_toEndOf="@+id/imgView_LinearVertical"
-            android:fontFamily="sans-serif-smallcaps"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:text="@string/linear_vertical"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rl_LinearHorizontal"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/rl_LinearVertical"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:clickable="true"
-        tools:ignore="MissingConstraints"
-        android:focusable="true">
-
-        <ImageView
-            android:id="@+id/imgView_LinearHorizontal"
-            android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toEndOf="@+id/imgView_LinearHorizontal"
-            android:fontFamily="sans-serif-smallcaps"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:text="@string/linear_horizontal"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rl_LinearGrid"
-        app:layout_constraintTop_toBottomOf="@+id/rl_LinearHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:clickable="true"
-        tools:ignore="MissingConstraints"
-        android:focusable="true">
-
-        <ImageView
-            android:id="@+id/imgView_LinearGrid"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
             android:src="@drawable/grid" />
 
+
         <TextView
+            android:id="@+id/textViewGrid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="10dp"
-            android:layout_toEndOf="@+id/imgView_LinearGrid"
-            android:fontFamily="sans-serif-smallcaps"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
             android:text="@string/linear_grid"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_below="@+id/imageViewGrid" />
+
 
     </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardViewStaggered"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 
     <RelativeLayout
-        android:id="@+id/rl_LinearStaggered"
+        android:id="@+id/relativeLayoutStaggered"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/rl_LinearGrid"
-        android:clickable="true"
-        tools:ignore="MissingConstraints"
-        android:focusable="true">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <ImageView
-            android:id="@+id/image"
-            android:layout_width="100dp"
+            android:id="@+id/imageViewStaggered"
+            android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
             android:src="@drawable/staggered" />
 
+
         <TextView
+            android:id="@+id/textViewStaggered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="10dp"
-            android:layout_toEndOf="@+id/image"
-            android:fontFamily="sans-serif-smallcaps"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:text="@string/linear_staggered"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="@string/linear_vertical"
+            android:layout_below="@+id/imageViewStaggered" />
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

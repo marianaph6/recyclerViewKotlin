@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         with(binding) {
-            rlLinearVertical.setOnClickListener { goToLinearVertical() }
-            rlLinearHorizontal.setOnClickListener { goToHorizontalVertical() }
-            rlLinearGrid.setOnClickListener { goToGridLayout() }
-            rlLinearStaggered.setOnClickListener { goToStaggeredLayout() }
+            cardViewVertical.setOnClickListener { goToLinearVertical() }
+            cardViewHorizontal.setOnClickListener { goToHorizontalVertical() }
+            cardViewGrid.setOnClickListener { goToGridLayout() }
+            cardViewStaggered.setOnClickListener { goToStaggeredLayout() }
         }
     }
 
