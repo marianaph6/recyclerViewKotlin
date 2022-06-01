@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recyclerviewkotlin.commons.Movie
 import com.example.recyclerviewkotlin.databinding.ItemViewHolderMovieGridLayoutBinding
-import kotlin.math.roundToInt
 
 class MovieGridLayoutViewHolder(
     view: View

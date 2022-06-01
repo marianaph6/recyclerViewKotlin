@@ -19,6 +19,7 @@ class MovieStaggeredGridViewHolder(
             textViewStaggeredGridTitle.text = model.title
             textViewStaggeredGridYear.text = model.year.toString()
             textViewStaggeredGridType.text= model.type
+            ratingBarStaggeredGridRating.numStars = model.rating.roundToInt()
             root.setOnClickListener {
                 onClickListener.onClick(model)
             }

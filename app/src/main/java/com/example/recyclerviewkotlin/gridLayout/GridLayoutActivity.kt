@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerviewkotlin.databinding.ActivityGridLayoutBinding
 import com.example.recyclerviewkotlin.commons.Movie
 

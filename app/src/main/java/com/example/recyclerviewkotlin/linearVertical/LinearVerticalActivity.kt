@@ -6,8 +6,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerviewkotlin.databinding.ActivityLinearVerticalBinding
 import com.example.recyclerviewkotlin.commons.Movie
-import com.example.recyclerviewkotlin.linearVertical.MovieLinearVerticalAdapter
-import com.example.recyclerviewkotlin.linearVertical.MovieOnClickListener
 
 class LinearVerticalActivity : AppCompatActivity(), MovieOnClickListener {
 
